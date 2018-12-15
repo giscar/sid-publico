@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>Defensoría del Pueblo - Formulario de Quejas y Consultas</display-name>
+    <servlet>
+        <servlet-name>GestionControllerServlet</servlet-name>
+        <servlet-class>gob.pe.defensoria.servlet.GestionController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExpedienteControllerServlet</servlet-name>
+        <servlet-class>gob.pe.defensoria.servlet.ExpedienteController</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ExpedienteControllerServlet</servlet-name>
+        <url-pattern>/expedienteControllerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GestionControllerServlet</servlet-name>
+        <url-pattern>/gestionControllerServlet</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>FormularioVirtualController</welcome-file>
+    </welcome-file-list>
+</web-app>
