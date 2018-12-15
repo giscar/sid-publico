@@ -1,0 +1,58 @@
+#formulario{ float:left; margin:20px 50px 40px 50px; width:870px;}
+div.form-texto{ float:left; width:110px;margin-left:20px; margin-top:10px; text-align:left;height:40px;}
+#form-textoq{ float:left; width:510px;margin-left:20px; margin-top:10px; text-align:left;height:40px;}
+#form-texto-queja{ float:left; width:510px;margin-left:20px; margin-top:10px; text-align:left;height:120px;}
+#form-queja{ float:left; width:510px;margin-left:20px; margin-top:10px; text-align:left;height:40px;}
+div.form-input{ float:left; width:270px;margin-left:20px; margin-top:10px; text-align:left;height:40px;}
+div.form-item{ float:left; height:40px; width:870px;}
+#form-item-queja{ float:left; height:120px; width:870px;}
+form {
+	width:870px; font-size:11px; font-family: "Trebuchet MS";
+}
+form fieldset {border:1px solid #d3d3d3; background-color:#f9f9f9;
+	
+}
+form fieldset legend {
+	font-weight:bold; font-size:12px;letter-spacing:0.5px;
+	
+}
+
+select{ font-size:11px; font-family: "Trebuchet MS"; width:180px; font-size:12px}
+
+input.DatePicker{
+	display: block;	width: 120px; padding: 3px 1px 3px 23px;
+	border:#c0c0c0 1px solid;font-size: 11px;
+	background: #fff url(../imagenes/date.gif) no-repeat top left;
+	cursor: pointer;
+}
+input:focus.DatePicker{
+	background: #fffce9 url(../imagenes/datefocus.gif) no-repeat top left;
+}
+.dp_container{ position: relative; padding: 0px; z-index: 500;
+}
+.dp_cal{
+	background-color: #fff; border: 1px solid #0070bf;
+	position: absolute; width: 177px; top: 24px;
+	left: 0; margin: 0px 0px 3px 0px;
+}
+.dp_cal table{	width: 100%;border-collapse: collapse;border-spacing: 0; }
+
+.dp_cal select{	margin: 2px 3px;font-size: 11px;}
+.dp_cal select option{	padding: 1px 3px;}
+
+.dp_cal th,.dp_cal td{
+	width: 14.2857%;text-align: center;	font-size: 11px;padding: 2px 0;
+}
+.dp_cal th{
+	border: solid #aad4f2;	border-width: 1px 0; color: #797774; background: #d9d9dc;
+	font-weight: bold; /* Cabecera de calendario dias*/
+}
+.dp_cal td{	cursor: pointer;}
+.dp_cal thead th{	background: #d9eefc;}
+.dp_cal td.dp_roll{	color: #000;background: #fff6bf;}
+/* must have this for the IE6 select box hiding */
+.dp_hide{	visibility: hidden;}
+.dp_empty{background: #eee;}
+.dp_today{ background: #8ac5ea; }
+
+.dp_selected{ color: #fff; background: #328dcf; }

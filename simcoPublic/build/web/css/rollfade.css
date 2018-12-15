@@ -1,0 +1,68 @@
+/*--style icono--*/
+img {border: none;}
+
+#ico {
+	width: 0px;
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+#ico #efx {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	border: 0px solid #ccc;
+	display: inline; /*--Gimp Fix aka IE6 Fix--*/
+}
+#ico #efx a.thumb {
+	width: 146px;
+	height: 136px;
+	padding: 0px;
+	border-bottom: 0px solid #ccc;
+	cursor: pointer;
+}
+#ico #efx span { /*--Used to crop image--*/
+	width: 146px;
+	height: 126px;
+	overflow: hidden;
+	padding: 0px;
+	display: block;
+}
+#ico #efx a {text-decoration: none; color: #777; display: block;}
+
+/*--style logotipo--*/
+
+#logos {
+	width: 0px;
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+#logos #efxs {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	border: 0px solid #ccc;
+	display: inline; /*--Gimp Fix aka IE6 Fix--*/
+}
+#logos #efxs a.thumb {
+	width: 580px;
+	height: 94px;
+	padding: 0px;
+	border-bottom: 0px solid #ccc;
+	cursor: pointer;
+}
+#logos #efxs span {
+	width: 580px;
+	height: 94px;
+	overflow: hidden;
+	display: block;
+	padding: 0px;
+}
+#logos #efxs a {
+	text-decoration: none;
+	color: #777;
+	display: block;
+}
