@@ -55,6 +55,7 @@
                 <div class="row">
                     <!-- <div class="col-md-4 col-md-offset-4"> -->
                     <div class="col-md-12">
+                        <br/><br/><br/>
                         <form id="idForm" method="post" action="gestionControllerServlet">
                             
                             <table style="width: 100%" id="tblDatos" class="table table-bordered table-hover table-striped">
