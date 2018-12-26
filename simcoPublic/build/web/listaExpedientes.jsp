@@ -54,7 +54,8 @@
             <div class="container">            
                 <div class="row">
                     <!-- <div class="col-md-4 col-md-offset-4"> -->
-                    <div class="col-md-12 col-md-offset-4">
+                    <div class="col-md-12">
+                        <br/><br/><br/>
                         <form id="idForm" method="post" action="gestionControllerServlet">
                             
                             <table style="width: 100%" id="tblDatos" class="table table-bordered table-hover table-striped">
@@ -65,7 +66,7 @@
                         </form>					
                     </div>				
                 </div>
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10">
                     <div class="alert " role="alert" style="font-size: 14px; text-align: center;"></div>
                 </div>
             </div> <!-- /container -->

@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/carlos/Documents/NetBeansProjects/simcoPublico/simcoPublic/web/listaExpedientes.jsp</file>
-            <file>file:/C:/Users/carlos/Documents/NetBeansProjects/simcoPublico/simcoPublic/web/formularioVirtual.jsp</file>
-            <file>file:/C:/Users/carlos/Documents/NetBeansProjects/simcoPublico/simcoPublic/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/carlos/Documents/NetBeansProjects/simcoPublico/simcoPublic/web/acceso.jsp</file>
-            <file>file:/C:/Users/carlos/Documents/NetBeansProjects/simcoPublico/simcoPublic/web/recursos/bootstrap.min.css</file>
-            <file>file:/C:/Users/carlos/Documents/NetBeansProjects/simcoPublico/simcoPublic/nbproject/build-impl.xml</file>
+            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/src/java/gob/pe/defensoria/servlet/FormularioVirtualController.java</file>
+            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/web/formularioVirtual.jsp</file>
+            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/src/java/gob/pe/defensoria/jpa/FormularioVirtualBk.java</file>
+            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/src/java/gob/pe/defensoria/ejb/SidFacade.java</file>
         </group>
     </open-files>
 </project-private>

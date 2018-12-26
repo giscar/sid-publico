@@ -53,8 +53,9 @@
 
             <div class="container">            
                 <div class="row">
+                    <br/><br/>
                     <!-- <div class="col-md-4 col-md-offset-4"> -->
-                    <div class="col-md-10 col-md-offset-4">
+                    <div class="col-md-10 col-md-offset-1">
                         <form id="expediente" style="padding: 30px; margin: 0 auto;" action="http://apps.defensoria.gob.pe/notificacionsid/" method="post">
                             <table style="width: 100%" id="tblDatos" class="table table-bordered table-hover table-striped">
                         <%=request.getAttribute("datatable")%>
