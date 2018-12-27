@@ -7,9 +7,11 @@ package gob.pe.defensoria.ejb;
 
 
 import gob.pe.defensoria.jpa.FormularioVirtualBk;
+import gob.pe.defensoria.jpa.MovilPersona;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
@@ -65,6 +67,21 @@ public class SidFacade {
         query.setParameter(1, codigoExpediente);
         List<Object[]> lst = query.getResultList();
         return lst;
+    }
+    
+    public MovilPersona buscarMovilPersonaLogin(String codigoDocumento, String contrasenia) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT c FROM MovilPersona c WHERE c.numeroDocumento= :numeroDocumento "
+                + " and c.contrasenia = :contrasenia ");
+        Query query = em.createQuery(sb.toString());
+        query.setParameter("numeroDocumento", codigoDocumento);
+        query.setParameter("contrasenia", contrasenia);
+        try {
+            MovilPersona result = (MovilPersona) query.getSingleResult();
+            return result;
+        } catch (NoResultException e) {
+            return null;
+        }
     }
     
 }

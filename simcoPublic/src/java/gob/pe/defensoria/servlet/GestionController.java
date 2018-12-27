@@ -56,7 +56,7 @@ public class GestionController extends HttpServlet {
     private String generarDatatable(List<GestionDTO> lista){
         StringBuilder sb = new StringBuilder();
         sb.append("<tr>");
-        if(lista.size() > 0){
+        //if(lista.size() > 0){
             sb.append("<th>Nro</th>");
             sb.append("<th>Fecha de la gestiòn</th>");
             sb.append("<th>Descripciòn</th>");
@@ -64,8 +64,15 @@ public class GestionController extends HttpServlet {
             sb.append("<th>Tipo de gestion</th>");
             sb.append("<th>tuvo respuesta?</th>");
             sb.append("<th>Archivo</th>");
-        }
+        //}
         sb.append("</tr>");
+        
+        if(lista.isEmpty()){
+            sb.append("<tr>");
+            sb.append("<td colspan='7'><b>No existen registros que mostrar</b></td>");
+            sb.append("</tr>");
+        }
+        
         int i = 0;
         for(GestionDTO dto : lista){
             i++;

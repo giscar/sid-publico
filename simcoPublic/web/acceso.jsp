@@ -76,7 +76,11 @@
                                     <!-- <input class="form-control left-border-none" placeholder="Contraseña" type="password" name="pass" id="pass"> -->
                                 </div>
                             </div>
-
+                            <div class="form-group">
+                                <div>
+                                    <span class="text-danger"><strong><%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %></strong></span>
+                                </div>
+                            </div>
                             <div class="form-group">                            
                                 <input type="submit" id="btnConsultar" class="form-control btn btn-primary" value="Ingresar">
                             </div>

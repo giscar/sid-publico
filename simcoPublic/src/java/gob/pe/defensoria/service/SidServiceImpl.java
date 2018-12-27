@@ -5,13 +5,17 @@
  */
 package gob.pe.defensoria.service;
 
+import gob.pe.defensoria.comun.MEncript;
 import gob.pe.defensoria.dto.ExpedienteDTO;
 import gob.pe.defensoria.dto.GestionDTO;
+import gob.pe.defensoria.dto.MovilPersonaDTO;
 import gob.pe.defensoria.ejb.SidFacade;
+import gob.pe.defensoria.jpa.MovilPersona;
 import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import org.apache.commons.beanutils.BeanUtils;
 
 /**
  *
@@ -57,6 +61,23 @@ public class SidServiceImpl implements SidService{
                 lista1.add(dto);
             }
     return lista1;
+    }
+
+    @Override
+    public MovilPersonaDTO login(String codDocumento, String password) throws  Exception {
+        MovilPersonaDTO result = null;
+        String encript = MEncript.getStringMessageDigest(password);
+        MovilPersona movilPersona = facade.buscarMovilPersonaLogin(codDocumento, encript);
+        if(movilPersona != null){
+            result = new MovilPersonaDTO();
+            result.setIdPersona(movilPersona.getIdPersona());
+            result.setNombre(movilPersona.getNombre());
+            result.setApellidoPaterno(movilPersona.getApellidoPaterno());
+            result.setApellidoMaterno(movilPersona.getApellidoMaterno());
+            result.setNumeroDocumento(movilPersona.getNumeroDocumento());
+            result.setEmail(movilPersona.getEmail());
+        }
+        return result;
     }
     
     

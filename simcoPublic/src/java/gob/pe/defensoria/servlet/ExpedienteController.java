@@ -6,6 +6,7 @@
 package gob.pe.defensoria.servlet;
 
 import gob.pe.defensoria.dto.ExpedienteDTO;
+import gob.pe.defensoria.dto.MovilPersonaDTO;
 import gob.pe.defensoria.service.SidService;
 import java.io.IOException;
 import java.util.List;
@@ -41,10 +42,26 @@ public class ExpedienteController extends HttpServlet {
        
         String datatable = null;
         String documento = request.getParameter("codDocumento");
-        datatable = listaExpediente(documento);
-        request.setAttribute("datatable", datatable);
-        request.getRequestDispatcher("/listaExpedientes.jsp").forward(request, response);
+        String contrasenia = request.getParameter("clave");
         
+        try {
+            MovilPersonaDTO movilPersonaDTO = service.login(documento, contrasenia);
+            if(movilPersonaDTO != null) {
+                
+                request.getSession().setAttribute("nombre", movilPersonaDTO.getNombre() + " " 
+                                    + movilPersonaDTO.getApellidoPaterno() + " " + 
+                                      movilPersonaDTO.getApellidoMaterno());
+                
+                datatable = listaExpediente(documento);
+                request.setAttribute("datatable", datatable);
+                request.getRequestDispatcher("/listaExpedientes.jsp").forward(request, response);
+            } else {
+                request.setAttribute("error", "Usuario o Password Incorrectos");
+                request.getRequestDispatcher("/acceso.jsp").forward(request, response);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     
     public String listaExpediente(String documento) {

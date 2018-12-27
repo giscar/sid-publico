@@ -51,11 +51,15 @@
 
             </nav>
 
-            <div class="container">            
+            <div class="container"> 
+                <div class="row col-md-10" style="text-align: right; padding-top: 50px;" >
+                    <button type="button" onclick="goBack()" class="btn btn-primary" >
+                        Volver
+                    </button>
+                </div>
                 <div class="row">
-                    <br/><br/>
                     <!-- <div class="col-md-4 col-md-offset-4"> -->
-                    <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-10">
                         <form id="expediente" style="padding: 30px; margin: 0 auto;" action="http://apps.defensoria.gob.pe/notificacionsid/" method="post">
                             <table style="width: 100%" id="tblDatos" class="table table-bordered table-hover table-striped">
                         <%=request.getAttribute("datatable")%>
@@ -67,13 +71,18 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="alert " role="alert" style="font-size: 14px; text-align: center;"></div>
                 </div>
+                    
             </div> <!-- /container -->
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="recursos2/jquery.min.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="recursos2/bootstrap.min.js" type="text/javascript"></script>
-
+        <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
 
     </body>
 </html>
