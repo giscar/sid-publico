@@ -66,7 +66,7 @@ public class SidServiceImpl implements SidService{
     @Override
     public MovilPersonaDTO login(String codDocumento, String password) throws  Exception {
         MovilPersonaDTO result = null;
-        String encript = MEncript.getStringMessageDigest(password);
+        String encript = password;
         MovilPersona movilPersona = facade.buscarMovilPersonaLogin(codDocumento, encript);
         if(movilPersona != null){
             result = new MovilPersonaDTO();
