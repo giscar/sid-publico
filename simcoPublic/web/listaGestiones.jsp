@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://apps.defensoria.gob.pe/notificacionsid/ -->
+<%@page pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="http://apps.defensoria.gob.pe/notificacionsid/favicon.ico?" type="image/x-icon">
-        <title>DefensorÌa del Pueblo - Acceso a los ciudadanos</title>
+        <title>Defensor√≠a del Pueblo - Acceso a los ciudadanos</title>
         <link rel="stylesheet" href="recursos2/bootstrap.css">
         <style type="text/css">
             body{
@@ -29,8 +30,8 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a href="http://www.defensoria.gob.pe/" class="navbar-brand">
-                            <span><img style="padding:0;margin: 0;" alt="DefensorÌa del Pueblo" src="./recursos/logo.png" width="50"></span>
-                            <span>DEFENSORÕA DEL PUEBLO</span>
+                            <span><img style="padding:0;margin: 0;" alt="Defensor√≠a del Pueblo" src="./recursos/logo.png" width="50"></span>
+                            <span>DEFENSOR√çA DEL PUEBLO</span>
                         </a>
                     </div>
                     <!-- Collection of nav links and other content for toggling -->
@@ -39,7 +40,7 @@
                             <!-- <li class="active"><a href="#">Expediente</a></li>
                             <li><a href="#">Expediente</a></li>						
                             <li><a href="#">Solicitud</a></li>
-                            <li><a href="#">UbÌcanos</a></li>
+                            <li><a href="#">Ub√≠canos</a></li>
                             -->
                         </ul>
                         <ul class="nav navbar-nav navbar-right">

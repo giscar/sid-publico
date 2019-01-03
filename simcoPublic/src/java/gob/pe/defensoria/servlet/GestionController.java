@@ -58,10 +58,10 @@ public class GestionController extends HttpServlet {
         sb.append("<tr>");
         //if(lista.size() > 0){
             sb.append("<th>Nro</th>");
-            sb.append("<th>Fecha de la gestiòn</th>");
-            sb.append("<th>Descripciòn</th>");
+            sb.append("<th>Fecha de la gestión</th>");
+            sb.append("<th>Descripción</th>");
             sb.append("<th>Entidad quejada</th>");
-            sb.append("<th>Tipo de gestion</th>");
+            sb.append("<th>Tipo de gestión</th>");
             sb.append("<th>tuvo respuesta?</th>");
             sb.append("<th>Archivo</th>");
         //}
@@ -83,7 +83,7 @@ public class GestionController extends HttpServlet {
                 sb.append("<td>").append(dto.getEntidad()).append("</td>");
                 sb.append("<td>").append(dto.getTipoGestion()).append("</td>");
                 sb.append("<td>").append(dto.getRespuesta()).append("</td>");
-                sb.append("<td>").append(dto.getRuta()).append("</td>");
+                sb.append("<td><a target='_blank' href='/sidPublic/DownloadFileServlet?fileName=").append(dto.getRuta()).append("'>Descargar</a></td>");
             sb.append("</tr>");
         }
         return sb.toString();

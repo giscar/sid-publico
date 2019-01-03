@@ -55,7 +55,7 @@ public class SidFacade {
     
     public List<Object[]> buscarGestionByExpediente(String codigoExpediente) {
         StringBuilder sb = new StringBuilder();
-        sb.append("SELECT to_char(a.d_fecha), a.c_descripcion, a.c_respuesta ,a.c_ruta1, C.NOMBRE_PARAMETRO AS GESTION_TIPO, D.C_NOMENTIDAD FROM SID_REG_GESTION A " +
+        sb.append("SELECT to_char(a.d_fecha, 'dd/mm/yyyy'), a.c_descripcion, a.c_respuesta ,a.c_ruta1, C.NOMBRE_PARAMETRO AS GESTION_TIPO, D.C_NOMENTIDAD FROM SID_REG_GESTION A " +
 "        INNER JOIN SID_REG_GESTION_ETAPA B ON A.N_ID_GESTION = B.N_ID_GESTION " +
 "        LEFT JOIN SID_PARAMETRO C ON TRIM(A.C_TIPO) = TRIM(C.VALOR_PARAMETRO) " +
 "        AND C.PADRE_PARAMETRO = 70 " +
