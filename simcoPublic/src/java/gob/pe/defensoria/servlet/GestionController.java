@@ -83,7 +83,12 @@ public class GestionController extends HttpServlet {
                 sb.append("<td>").append(dto.getEntidad()).append("</td>");
                 sb.append("<td>").append(dto.getTipoGestion()).append("</td>");
                 sb.append("<td>").append(dto.getRespuesta()).append("</td>");
-                sb.append("<td><a target='_blank' href='/sidPublic/DownloadFileServlet?fileName=").append(dto.getRuta()).append("'>Descargar</a></td>");
+                if(!dto.getRuta().trim().isEmpty()){
+                    sb.append("<td><a target='_blank' href='/sidPublic/DownloadFileServlet?fileName=").append(dto.getRuta()).append("'>Descargar</a></td>");    
+                }else{
+                    sb.append("<td>---</td>");
+                }
+                
             sb.append("</tr>");
         }
         return sb.toString();
