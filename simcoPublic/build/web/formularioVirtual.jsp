@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0057)https://www.defensoria.gob.pe/quejas/formulario-queja.php -->
+<%@page pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,7 +15,7 @@
 
         <meta http-equiv="Content-Language" content="es">
         <link rel="shortcut icon" href="https://www.defensoria.gob.pe/quejas/imagenes/favicon.png" type="image/gif">
-        <title>Defensoría del Pueblo- Formulario de Quejas y Consultas - Dejanos tu caso</title>
+        <title>DefensorÃ­a del Pueblo- Formulario de Quejas y Consultas - Dejanos tu caso</title>
 
 
 
@@ -121,7 +122,7 @@
                             </div>
                             <div class="col-6 col-sm-7 col-md-7 col-lg-6">
                                 <div class="titulo">
-                                    Defensoría del Pueblo</div>
+                                    DefensorÃ­a del Pueblo</div>
                             </div>
                         </div>
                     </div>
@@ -131,16 +132,16 @@
         <div class="container">
             <div class="clear"></div>
 
-            <div><h1>Presente su caso en Línea</h1></div>
+            <div><h1>Presente su caso en LÃ­nea</h1></div>
 
             <div id="texto">
 
-                <p>En cumplimiento de lo previsto en  el artículo 162º de la Constitución
-                    y la Ley Nº 26520, Ley Orgánica de la Defensoría del Pueblo, nuestra institución atiende solicitudes
-                    de intervención de los ciudadanos ante una entidad de la Administración Pública o de las empresas prestadoras de servicios públicos. </p>
+                <p>En cumplimiento de lo previsto en  el artÃ­culo 162Âº de la ConstituciÃ³n
+                    y la Ley NÂº 26520, Ley OrgÃ¡nica de la DefensorÃ­a del Pueblo, nuestra instituciÃ³n atiende solicitudes
+                    de intervenciÃ³n de los ciudadanos ante una entidad de la AdministraciÃ³n PÃºblica o de las empresas prestadoras de servicios pÃºblicos. </p>
                 <p>
                 </p>
-                <p>Estas pueden ser quejas, cuando exista alguna vulneración o el peligro de vulneración de un derecho fundamental; o, petitorios a manera de buenos oficios, para que se atienda o solucione una situación de indefensión que afecta o amenaza los derechos fundamentales, que no representa un incumplimiento de los deberes de la Administración Pública o de las empresas prestadoras de servicios públicos, pero que éstas pueden atender en ejercicio de sus competencias; asimismo, se absuelven consultas legales o se brinda información sobre las entidades o vías pertinentes a las que podría acudir para hacer valer sus derechos.</p>
+                <p>Estas pueden ser quejas, cuando exista alguna vulneraciÃ³n o el peligro de vulneraciÃ³n de un derecho fundamental; o, petitorios a manera de buenos oficios, para que se atienda o solucione una situaciÃ³n de indefensiÃ³n que afecta o amenaza los derechos fundamentales, que no representa un incumplimiento de los deberes de la AdministraciÃ³n PÃºblica o de las empresas prestadoras de servicios pÃºblicos, pero que Ã©stas pueden atender en ejercicio de sus competencias; asimismo, se absuelven consultas legales o se brinda informaciÃ³n sobre las entidades o vÃ­as pertinentes a las que podrÃ­a acudir para hacer valer sus derechos.</p>
             </div>
 
             <div id="formulario">
@@ -185,7 +186,7 @@
                                 <input type="text" id="documento" tabindex="6" name="documento" class="form-control" onpaste="return false" autocomplete="off">
                             </div>
 
-                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><label for="telefono">Teléfono</label>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><label for="telefono">TelÃ©fono</label>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                                 <input type="text" id="telefono" name="telefono" class="form-control" tabindex="7" onpaste="return false" autocomplete="off">
@@ -213,7 +214,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><label for="direccion">Dirección (*):</label>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"><label for="direccion">DirecciÃ³n (*):</label>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                 <input type="text" id="direccion" name="direccion" size="35" tabindex="14" onpaste="return false" class="form-control" autocomplete="off">
@@ -250,7 +251,7 @@
                         <legend>&nbsp;&nbsp;Datos del Caso o Consulta&nbsp;&nbsp;</legend>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <label for="queja">Escriba una breve descripción de su caso (*)</label>
+                                <label for="queja">Escriba una breve descripciÃ³n de su caso (*)</label>
                             </div>
                         </div>
                         <div class="row">
@@ -260,7 +261,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <label for="adjunto1">Adjunte su archivo (Máximo: 20Mb)</label>
+                                <label for="adjunto1">Adjunte su archivo (MÃ¡ximo: 20Mb)</label>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input id="adjunto1" type="file" name="adjunto1" tabindex="19">
                             </div>
@@ -329,7 +330,7 @@
         </script>
 
         <script type="text/javascript">
-
+            
             var nombre = document.getElementById("nombres");
             nombre.setAttribute("autocomplete", "off");
             var paterno = document.getElementById("apaterno");

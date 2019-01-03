@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/src/java/gob/pe/defensoria/servlet/FormularioVirtualController.java</file>
-            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/web/formularioVirtual.jsp</file>
-            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/src/java/gob/pe/defensoria/jpa/FormularioVirtualBk.java</file>
-            <file>file:/Users/carlosleon/NetBeansProjects/sid-publico/simcoPublic/src/java/gob/pe/defensoria/ejb/SidFacade.java</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/src/java/gob/pe/defensoria/servlet/GestionController.java</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/src/java/gob/pe/defensoria/jpa/FormularioVirtualBk.java</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/web/WEB-INF/glassfish-web.xml</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/web/WEB-INF/web.xml</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/src/java/gob/pe/defensoria/ejb/SidFacade.java</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/src/java/gob/pe/defensoria/servlet/FormularioVirtualController.java</file>
+            <file>file:/Users/ccarrillojara/Projects/code/sid-publico/simcoPublic/web/formularioVirtual.jsp</file>
         </group>
     </open-files>
 </project-private>

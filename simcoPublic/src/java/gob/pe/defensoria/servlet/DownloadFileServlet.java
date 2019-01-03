@@ -36,12 +36,12 @@ public class DownloadFileServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
         private ServletFileUpload uploader = null;
         
-        //protected String separador = "/"; //linux
-        protected String separador = "\\"; //windows 
+        protected String separador = "/"; //linux
+        //protected String separador = "\\"; //windows 
         
-        public static String FILE_DONWLOAD = "C:/filesystem";
+        //public static String FILE_DONWLOAD = "C:/filesystem";
     
-    //public static String FILE_DONWLOAD = "/srv/sid/filesystem";
+        public static String FILE_DONWLOAD = "/srv/sid/filesystem";
 
     protected static String FILE_SYSTEM = FILE_DONWLOAD+"/";
 	@Override
