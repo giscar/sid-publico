@@ -36,6 +36,9 @@ public class FormularioVirtual implements Serializable {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQ_SID_REG_FORMULARIO_VIRTUAL")
     @Column(name = "N_ID_REGISTRO")
     private Long nIdRegistro;
+    @Size(max = 3)
+    @Column(name = "C_TIPO")
+    private String cTipo;
     @Size(max = 300)
     @Column(name = "C_NOMBRES")
     private String cNombres;
@@ -105,6 +108,14 @@ public class FormularioVirtual implements Serializable {
 
     public void setNIdRegistro(Long nIdRegistro) {
         this.nIdRegistro = nIdRegistro;
+    }
+    
+    public String getCTipo() {
+        return cTipo;
+    }
+
+    public void setCTipo(String cTipo) {
+        this.cTipo = cTipo;
     }
 
     public String getCNombres() {

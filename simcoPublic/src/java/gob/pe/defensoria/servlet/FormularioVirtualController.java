@@ -114,6 +114,7 @@ public class FormularioVirtualController extends HttpServlet {
             fv.setdFecha(new Date());
             fv.setcEstado("A");
             fv.setcForma("07");
+            fv.setCTipo("PER");
             fv = facade.guardar(fv);
             guardar(fv);
             response.sendRedirect("https://www.defensoria.gob.pe/quejas/respuesta1.php");
@@ -139,6 +140,7 @@ public class FormularioVirtualController extends HttpServlet {
         bk.setDFechanacimiento(fv.getDFechanacimiento());
         bk.setNIdRegistro(fv.getNIdRegistro());
         bk.setdFechaRegistro(fv.getdFechaRegistro());
+        bk.setCTipo(fv.getCTipo());
         bKFacade.guardar(bk);
         return bk;
     }
