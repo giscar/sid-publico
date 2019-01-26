@@ -40,6 +40,7 @@ public class SidServiceImpl implements SidService{
                 dto.setSede(os[7] == null? " " : os[7].toString());
                 dto.setEstado(os[6] == null? " " : os[6].toString());
                 dto.setComisionado(os[8] == null? " " : os[8].toString());
+                dto.setArchivo(os[9] == null? " " : os[9].toString());
                 lista1.add(dto);
             }
     return lista1;
@@ -57,7 +58,7 @@ public class SidServiceImpl implements SidService{
                 dto.setRuta(os[3] == null? " " : os[3].toString());
                 dto.setTipoGestion(os[4] == null? "" : os[4].toString());
                 dto.setEntidad(os[5] == null? " " : os[5].toString());
-                
+                dto.setRutaRespuesta(os[6] == null? " " : os[6].toString());
                 lista1.add(dto);
             }
     return lista1;

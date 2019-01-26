@@ -32,7 +32,7 @@ public class SidFacade {
     public List<Object[]> buscarExpedienteByDocumento(String documento) {
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT DISTINCT a.n_idexpediente, a.c_numeroexpediente, to_char(a.d_fecharegistro, 'dd/mm/yyyy'), B.NOMBRE_PARAMETRO AS TIPOCLASIFICACION, C.C_INDICADORETAPA, " +
-"        C.N_ID_ETAPA, D.C_NOMBRE, J.C_NOMBRE NOMBRE_OD, L.NOM_USUARIO||' '||L.APE_PATERNO COMISIONADO " +
+"        C.N_ID_ETAPA, D.C_NOMBRE, J.C_NOMBRE NOMBRE_OD, L.NOM_USUARIO||' '||L.APE_PATERNO COMISIONADO, a.C_RUTA " +
 "        FROM SID_REG_EXPEDIENTE A " +
 "        INNER JOIN SID_PARAMETRO B ON A.C_TIPOCLASIFICACION = B.VALOR_PARAMETRO AND B.PADRE_PARAMETRO = 10 " +
 "        INNER JOIN SID_SEG_USUARIO L ON L.CODIGO_USUARIO = A.C_USUREGISTRO " +
@@ -55,7 +55,7 @@ public class SidFacade {
     
     public List<Object[]> buscarGestionByExpediente(String codigoExpediente) {
         StringBuilder sb = new StringBuilder();
-        sb.append("SELECT to_char(a.d_fecha, 'dd/mm/yyyy'), a.c_descripcion, a.c_respuesta ,a.c_ruta1, C.NOMBRE_PARAMETRO AS GESTION_TIPO, D.C_NOMENTIDAD FROM SID_REG_GESTION A " +
+        sb.append("SELECT to_char(a.d_fecha, 'dd/mm/yyyy'), a.c_descripcion, a.c_respuesta ,a.c_ruta1, C.NOMBRE_PARAMETRO AS GESTION_TIPO, D.C_NOMENTIDAD, a.c_ruta2 FROM SID_REG_GESTION A " +
 "        INNER JOIN SID_REG_GESTION_ETAPA B ON A.N_ID_GESTION = B.N_ID_GESTION " +
 "        LEFT JOIN SID_PARAMETRO C ON TRIM(A.C_TIPO) = TRIM(C.VALOR_PARAMETRO) " +
 "        AND C.PADRE_PARAMETRO = 70 " +

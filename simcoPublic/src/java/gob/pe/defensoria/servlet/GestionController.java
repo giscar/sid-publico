@@ -62,8 +62,9 @@ public class GestionController extends HttpServlet {
             sb.append("<th>Descripción</th>");
             sb.append("<th>Entidad quejada</th>");
             sb.append("<th>Tipo de gestión</th>");
+            sb.append("<th>Archivo gestión</th>");
             sb.append("<th>tuvo respuesta?</th>");
-            sb.append("<th>Archivo</th>");
+            sb.append("<th>Archivo respuesta</th>");
         //}
         sb.append("</tr>");
         
@@ -82,9 +83,15 @@ public class GestionController extends HttpServlet {
                 sb.append("<td>").append(dto.getDescripcion()).append("</td>");
                 sb.append("<td>").append(dto.getEntidad()).append("</td>");
                 sb.append("<td>").append(dto.getTipoGestion()).append("</td>");
-                sb.append("<td>").append(dto.getRespuesta()).append("</td>");
+                
                 if(!dto.getRuta().trim().isEmpty()){
                     sb.append("<td><a target='_blank' href='/sidPublic/DownloadFileServlet?fileName=").append(dto.getRuta()).append("'>Descargar</a></td>");    
+                }else{
+                    sb.append("<td>---</td>");
+                }
+                sb.append("<td>").append(dto.getRespuesta()).append("</td>");
+                if(!dto.getRutaRespuesta().trim().isEmpty()){
+                    sb.append("<td><a target='_blank' href='/sidPublic/DownloadFileServlet?fileName=").append(dto.getRutaRespuesta()).append("'>Descargar</a></td>");    
                 }else{
                     sb.append("<td>---</td>");
                 }

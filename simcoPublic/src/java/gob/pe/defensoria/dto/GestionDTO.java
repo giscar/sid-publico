@@ -22,6 +22,8 @@ public class GestionDTO {
     private String fecha;
     
     private String respuesta;
+    
+    private String rutaRespuesta;
 
     public String getDescripcion() {
         return descripcion;
@@ -69,6 +71,14 @@ public class GestionDTO {
 
     public void setRespuesta(String respuesta) {
         this.respuesta = respuesta;
+    }
+
+    public String getRutaRespuesta() {
+        return rutaRespuesta;
+    }
+
+    public void setRutaRespuesta(String rutaRespuesta) {
+        this.rutaRespuesta = rutaRespuesta;
     }
     
     

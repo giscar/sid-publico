@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://apps.defensoria.gob.pe/notificacionsid/ -->
+<%@page pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="http://apps.defensoria.gob.pe/notificacionsid/favicon.ico?" type="image/x-icon">
-        <title>DefensorÌa del Pueblo - Acceso a los ciudadanos</title>
+        <title>Defensor√≠a del Pueblo - Acceso a los ciudadanos</title>
         <link rel="stylesheet" href="recursos2/bootstrap.css">
         <style type="text/css">
             body{
@@ -29,8 +30,8 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a href="http://www.defensoria.gob.pe/" class="navbar-brand">
-                            <span><img style="padding:0;margin: 0;" alt="DefensorÌa del Pueblo" src="./recursos/logo.png" width="50"></span>
-                            <span>DEFENSORÕA DEL PUEBLO</span>
+                            <span><img style="padding:0;margin: 0;" alt="Defensor√≠a del Pueblo" src="./recursos/logo.png" width="50"></span>
+                            <span>DEFENSOR√çA DEL PUEBLO</span>
                         </a>
                     </div>
                     <!-- Collection of nav links and other content for toggling -->
@@ -39,7 +40,7 @@
                             <!-- <li class="active"><a href="#">Expediente</a></li>
                             <li><a href="#">Expediente</a></li>						
                             <li><a href="#">Solicitud</a></li>
-                            <li><a href="#">UbÌcanos</a></li>
+                            <li><a href="#">Ub√≠canos</a></li>
                             -->
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -63,7 +64,7 @@
                                 <!--<label for="codExpediente">Nro. de Expediente</label> -->
                                 <div class="input-group">
                                     <span class="input-group-addon transparent"><span class="glyphicon glyphicon-file"></span></span>
-                                    <input id="codDocumento" name="codDocumento" placeholder="N∞ de documento" type="text" class="form-control left-border-none" value="">
+                                    <input id="codDocumento" name="codDocumento" placeholder="N¬∫ de documento" type="text" class="form-control left-border-none" value="">
                                     <!-- <input class="form-control left-border-none" type="text" name="usuario" id="usuario"> -->
                                 </div>
                             </div>                     
@@ -73,7 +74,7 @@
                                 <div class="input-group">
                                     <span class="input-group-addon transparent"><span class="glyphicon glyphicon-lock"></span></span>
                                     <input id="clave" name="clave" placeholder="Clave" type="password" class="form-control left-border-none" value="">
-                                    <!-- <input class="form-control left-border-none" placeholder="ContraseÒa" type="password" name="pass" id="pass"> -->
+                                    <!-- <input class="form-control left-border-none" placeholder="Contrase√±a" type="password" name="pass" id="pass"> -->
                                 </div>
                             </div>
                             <div class="form-group">
@@ -84,9 +85,9 @@
                             <div class="form-group">                            
                                 <input type="submit" id="btnConsultar" class="form-control btn btn-primary" value="Ingresar">
                             </div>
-                            <!-- <a href="#">OlvidÈ mi contraseÒa</a> -->
+                            <!-- <a href="#">Olvid√≥ mi contrase√±a</a> -->
                             <br><br>
-                            <!-- <p style="font-size:14px; text-align:right;">øTienes otro caso? <a href="#">Registra tu Caso</a></p> -->
+                            <!-- <p style="font-size:14px; text-align:right;">¬øTienes otro caso? <a href="#">Registra tu Caso</a></p> -->
 
                         </form>					
                     </div>				

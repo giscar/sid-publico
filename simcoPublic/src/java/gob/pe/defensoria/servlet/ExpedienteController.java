@@ -80,6 +80,7 @@ public class ExpedienteController extends HttpServlet {
             sb.append("<th>Tipo de expediente</th>");
             sb.append("<th>Estado</th>");
             sb.append("<th>Sede</th>");
+            sb.append("<th>Archivo</th>");
             sb.append("<th>Gestiones</th>");
         }
         sb.append("</tr>");
@@ -94,6 +95,12 @@ public class ExpedienteController extends HttpServlet {
                 sb.append("<td>").append(dto.getTipoExpediente()).append("</td>");
                 sb.append("<td>").append(dto.getEstado()).append("</td>");
                 sb.append("<td>").append(dto.getSede()).append("</td>");
+                
+                if(!dto.getArchivo().trim().isEmpty()){
+                    sb.append("<td><a target='_blank' href='/sidPublic/DownloadFileServlet?fileName=").append(dto.getArchivo()).append("'>Descargar</a></td>");    
+                }else{
+                    sb.append("<td>---</td>");
+                }
                 sb.append("<td style='text-align:center'><a href='#' onclick=listarGestiones('"+dto.getNumero()+"') >" +
 "                                    <span class='glyphicon glyphicon-search' />" +
 "                                </a></td>");

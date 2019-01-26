@@ -24,6 +24,8 @@ public class ExpedienteDTO {
     private String sede;
     
     private String estado;
+    
+    private String archivo;
 
     public Long getId() {
         return id;
@@ -79,6 +81,14 @@ public class ExpedienteDTO {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getArchivo() {
+        return archivo;
+    }
+
+    public void setArchivo(String archivo) {
+        this.archivo = archivo;
     }
 
     

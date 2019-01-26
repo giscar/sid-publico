@@ -53,14 +53,14 @@
             </nav>
 
             <div class="container"> 
-                <div class="row col-md-10" style="text-align: right; padding-top: 50px;" >
+                <div class="row col-md-12" style="text-align: right; padding-top: 50px;" >
                     <button type="button" onclick="goBack()" class="btn btn-primary" >
                         Volver
                     </button>
                 </div>
                 <div class="row">
                     <!-- <div class="col-md-4 col-md-offset-4"> -->
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <form id="expediente" style="padding: 30px; margin: 0 auto;" action="http://apps.defensoria.gob.pe/notificacionsid/" method="post">
                             <table style="width: 100%" id="tblDatos" class="table table-bordered table-hover table-striped">
                         <%=request.getAttribute("datatable")%>
